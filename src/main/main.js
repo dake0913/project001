@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import gsap from 'gsap';
 
 const scene = new THREE.Scene();
 // 2、创建相机
@@ -10,7 +11,7 @@ const camera = new THREE.PerspectiveCamera(
     1000
 );
 
-// 设置相机位置
+// 设置相机位置y
 camera.position.set(0, 0, 10);
 scene.add(camera);
 
@@ -23,6 +24,7 @@ scene.add(cube);
 cube.position.x = 3;
 // cube.rotation.x= -Math.PI/2;
 // cube.rotation.set( Math.PI/4,0,0,'XZY');
+gsap.to(".pink", cube.position, { x:200, rotation:360,duration:2,ease:'bounce.out' });
 
 
 /* we need to add a light so we can see our cube - its almost
