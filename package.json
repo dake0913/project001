@@ -2,7 +2,6 @@
   "name": "project001",
   "version": "1.0.0",
   "description": "A little cube",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
