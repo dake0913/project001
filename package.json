@@ -1,13 +1,13 @@
 {
   "name": "project001",
   "version": "1.0.0",
-  "description": "",
+  "description": "A little cube",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
-  "author": "",
+  "author": "dake",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.8.2"
